@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <string name="app_name">المترجم المثالى</string>
+        <string name="phrasebook">قاموس</string>
+        <string name="help">مساعده</string>
+        <string name="setting">الضبط</string>
+        <string name="about">من نحن</string>
+        <string name="report_a_bug">أبلغ عن عطل</string>
+        <string name="dark_mode">النظام الليلى</string>
+        <string name="language">اللغه</string>
+        <string name="input_edit_text_hint">ادخل ماتريد ترجمته</string>
+        <string name="camera">الكاميرا</string>
+        <string name="conversation">محادثه</string>
+        <string name="voice">صوت</string>
+        <string name="clear">مسح النص</string>
+        <string name="offline_languages">اللغات المحفوظه</string>
+        <string name="feedback_help"><![CDATA[المساعده والتوصيه]]></string>
+        <string name="star_imageView_description">حفظ</string>
+        <string name="hint_word">Word...</string>
+        <string name="button_save">حفظ</string>
+        <string name="empty_not_saved">خطأ لا يمكن الحفظ</string>
+        <string name="about_text_view">اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه اختبار اللغه العربيه </string>
+</resources>

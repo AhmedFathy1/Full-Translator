@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "555507680295",
+    "firebase_url": "https://translate-bfdf4.firebaseio.com",
+    "project_id": "translate-bfdf4",
+    "storage_bucket": "translate-bfdf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555507680295:android:110758aa27b8e90c",
+        "android_client_info": {
+          "package_name": "com.quasar.vtrans.visualtranslator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555507680295-5u14vtfo798etkuh3sim9nkndllfehfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzPUTVCa03RksSLkGR15_kz8axYk5umVQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

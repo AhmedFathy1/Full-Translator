@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/translated_edit_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width ="0dip"
+        android:layout_height ="wrap_content"
+        android:layout_weight ="1"
+        android:inputType="textCapSentences|textMultiLine"
+        android:ems="10"
+        android:scrollHorizontally="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/words_input_edit_text" />
+
+    <EditText
+        android:id="@+id/words_input_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="top|start"
+        android:scrollHorizontally="false"
+        android:hint="@string/input_edit_text_hint"
+        android:inputType="text"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/output_language_button"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/language"
+        android:textColor="#631111"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/translated_edit_text" />
+
+    <Button
+        android:id="@+id/input_language_button"
+        style="?android:attr/spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/language"
+        android:textColor="#631111"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/translated_edit_text" />
+
+    <ImageView
+        android:id="@+id/camera_image_view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="94dp"
+        android:contentDescription="@string/camera"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_language_button" />
+
+    <TextView
+        android:id="@+id/camera_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/camera"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_image_view"
+        app:layout_constraintStart_toEndOf="@+id/camera_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/input_language_button" />
+
+    <ImageView
+        android:id="@+id/conversation_image_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/conversation"
+        android:src="@drawable/conversation"
+        app:layout_constraintEnd_toStartOf="@+id/conversation_textView"
+        app:layout_constraintTop_toBottomOf="@+id/output_language_button" />
+
+    <TextView
+        android:id="@+id/conversation_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/conversation"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_language_button" />
+
+    <ImageView
+        android:id="@+id/voice_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/voice_textView"
+        app:layout_constraintTop_toBottomOf="@+id/input_language_button"
+        android:src="@drawable/voice"
+        android:contentDescription="@string/voice"/>
+
+    <TextView
+        android:id="@+id/voice_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/voice"
+        app:layout_constraintEnd_toStartOf="@+id/conversation_image_View"
+        app:layout_constraintTop_toBottomOf="@+id/output_language_button" />
+
+    <ImageView
+        android:id="@+id/clear_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/clear"
+        app:layout_constraintEnd_toEndOf="@+id/words_input_edit_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clear_text" />
+
+    <ImageView
+        android:id="@+id/star_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/star_imageView_description"
+        app:layout_constraintEnd_toEndOf="@+id/translated_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/translated_edit_text"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <TextView
+        android:id="@+id/image_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="64dp"
+        android:text="Image"
+        app:layout_constraintEnd_toStartOf="@+id/conversation_image_View"
+        app:layout_constraintTop_toBottomOf="@+id/voice_textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/voice_imageView"
+        app:srcCompat="@drawable/image_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/phrasebook_item_menu"
+            android:title="@string/phrasebook"
+            app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/offline_item_menu"
+        android:title="@string/offline_languages"
+         />
+
+    <item
+        android:id="@+id/checkable_item_menu"
+        android:checkable="true"
+        android:title="@string/dark_mode" />
+
+
+    <item android:id="@+id/settings_item_menu"
+        android:title="@string/setting" />
+
+    <item android:id="@+id/feedback_help_item_menu"
+            android:title="@string/feedback_help" />
+
+    <item android:id="@+id/about_item_menu"
+        android:title="@string/about" />
+
+</menu>
